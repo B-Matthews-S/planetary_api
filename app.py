@@ -33,7 +33,6 @@ def db_drop():
 
 @app.cli.command('db_seed')
 def db_seed():
-    PlanetController.db_seed()
     print('Database seeded!')
 
 
