@@ -35,12 +35,12 @@ def db_drop():
 
 @app.cli.command('db_seed')
 def db_seed():
-    mecury = Planet(planet_name='Mecury',
-                    planet_type='Class D',
-                    home_star='Sol',
-                    mass=3.258e23,
-                    radius=1516,
-                    distance=35.98e6)
+    mercury = Planet(planet_name='Mercury',
+                     planet_type='Class D',
+                     home_star='Sol',
+                     mass=3.258e23,
+                     radius=1516,
+                     distance=35.98e6)
 
     venus = Planet(planet_name='Venus',
                    planet_type='Class K',
@@ -56,7 +56,7 @@ def db_seed():
                    radius=3959,
                    distance=92.96e6)
 
-    db.session.add(mecury)
+    db.session.add(mercury)
     db.session.add(venus)
     db.session.add(earth)
 
